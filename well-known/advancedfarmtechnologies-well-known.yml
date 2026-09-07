@@ -1,0 +1,99 @@
+name: Advanced Farm Technologies Well-Known Documents
+description: >-
+  Probe of the IETF/industry /.well-known discovery paths on every host this record knows for
+  Advanced Farm Technologies. No document was served. The company's own domain, advanced.farm,
+  no longer serves a site: every path returns a blanket HTTP 301 to the acquirer's marketing
+  page at https://agriculture.newholland.com/en-us/nar following CNH Industrial's April 2025
+  acquisition of the company's intellectual property and assets. This file records that
+  absence; no WellKnown or SecurityTxt pointer is wired into apis.yml because nothing is served.
+generated: '2026-09-07'
+method: probed
+source: https://advanced.farm/
+hosts:
+- host: advanced.farm
+  note: >-
+    Former primary domain. HTTPS (443) does not complete a TLS handshake (connection times out);
+    HTTP (80) answers every path with a catch-all 301 to the CNH / New Holland Agriculture site.
+    DNS is served by CSC Corporate Domains (dns1/dns2.cscdns.net) pointing at 165.160.13.20 and
+    165.160.15.20 — corporate domain-holding infrastructure, not an application origin.
+    No path returns a document.
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 301
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    file: null
+  - path: /.well-known/api-catalog
+    status: 301
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 301
+    file: null
+  - path: /.well-known/agent.json
+    status: 301
+    file: null
+contract_discovery:
+  note: >-
+    STEP 0b contract discovery, run 2026-09-07 against every host this record knows. All misses.
+    No OpenAPI, Swagger, GraphQL, MCP, AsyncAPI, WSDL, Protobuf or OGC surface was found, and the
+    Internet Archive CDX index holds no capture of any /api, /developer, /docs, /openapi,
+    /swagger, /graphql or /.well-known URL on advanced.farm at any point in the domain's history.
+  probes:
+  - url: http://advanced.farm/openapi.json
+    status: 301
+  - url: http://advanced.farm/openapi.yaml
+    status: 301
+  - url: http://advanced.farm/swagger.json
+    status: 301
+  - url: http://advanced.farm/v1/openapi.json
+    status: 301
+  - url: http://advanced.farm/api-docs
+    status: 301
+  - url: http://advanced.farm/docs
+    status: 301
+  - url: http://advanced.farm/redoc
+    status: 301
+  - url: http://advanced.farm/graphql
+    status: 301
+  - url: http://advanced.farm/llms.txt
+    status: 301
+  - url: http://advanced.farm/apis.json
+    status: 301
+  - url: https://advanced.farm/
+    status: 0
+    note: TLS connection timed out; no HTTPS listener answers.
+  dns_subdomains_absent:
+  - api.advanced.farm
+  - app.advanced.farm
+  - docs.advanced.farm
+  - developer.advanced.farm
+  - portal.advanced.farm
+  - cloud.advanced.farm
+  - fleet.advanced.farm
+  registries_absent:
+  - registry: npm
+    queried:
+    - advanced-farm
+    - advancedfarm
+    - advanced.farm
+    status: 404
+  - registry: pypi
+    queried:
+    - advanced-farm
+    - advancedfarm
+    status: 404
+  - registry: github
+    queried:
+    - advanced-farm
+    - advancedfarm
+    - advanced-farm-technologies
+    - advancedfarmtechnologies
+    - aftrobots
+    status: 404

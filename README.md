@@ -1,4 +1,4 @@
-# Advancedfarmtechnologies
+# Advanced Farm Technologies
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,17 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Advancedfarmtechnologies is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
+Advanced Farm Technologies (brand: advanced.farm) was an agricultural robotics company founded in 2017 in
+Davis, California, building autonomous robotic harvesters for specialty crops — a T-6 robotic strawberry
+harvester and a six-armed robotic apple harvester — and selling harvesting as a service rather than the
+machines. On 2025-04-02 CNH Industrial acquired its intellectual property and assets and the majority of its
+technical team joined CNH. The company no longer operates independently: `advanced.farm` now returns a
+blanket HTTP 301 to CNH's New Holland Agriculture site, and no HTTPS listener answers there at all.
+
+**No API surface.** Advanced Farm never published a public API, developer portal, SDK or machine-readable
+contract. Contract discovery (OpenAPI, Swagger, GraphQL, MCP, AsyncAPI, WSDL, Protobuf, OGC, agent card)
+was run against every host this record knows on 2026-09-07 and missed on all of them; the Internet Archive
+holds no capture of an `/api`, `/developer`, `/docs` or `/.well-known` URL on the domain at any point in its
+history. The probe log is in [`well-known/`](well-known/advancedfarmtechnologies-well-known.yml).
+
 - https://equityzen.com/company/advancedfarmtechnologies
