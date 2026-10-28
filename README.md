@@ -64,17 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Advanced Farm Technologies (brand: advanced.farm) was an agricultural robotics company founded in 2017 in
-Davis, California, building autonomous robotic harvesters for specialty crops — a T-6 robotic strawberry
-harvester and a six-armed robotic apple harvester — and selling harvesting as a service rather than the
-machines. On 2025-04-02 CNH Industrial acquired its intellectual property and assets and the majority of its
-technical team joined CNH. The company no longer operates independently: `advanced.farm` now returns a
-blanket HTTP 301 to CNH's New Holland Agriculture site, and no HTTPS listener answers there at all.
+Advanced Farm Technologies (brand: advanced.farm) was an agricultural robotics company founded in 2017 in Davis, California, building autonomous robotic harvesters for specialty crops. Its T-6 robotic strawberry harvester and six-armed robotic apple harvester used custom rugged stereo cameras and machine-learning ripeness models to identify and pick fruit alongside human crews, and the company sold harvesting as a service rather than selling the machines. It raised roughly $34M from investors including CNH Industrial, Yamaha Motor Ventures and Catapult Ventures. On 2025-04-02 CNH Industrial acquired the company's intellectual property and assets and the majority of its technical team joined CNH; the company no longer operates independently. Its domain, advanced.farm, now returns a blanket HTTP 301 to CNH's New Holland Agriculture site. Advanced Farm never published a public API, developer portal, SDK or machine-readable contract.
 
-**No API surface.** Advanced Farm never published a public API, developer portal, SDK or machine-readable
-contract. Contract discovery (OpenAPI, Swagger, GraphQL, MCP, AsyncAPI, WSDL, Protobuf, OGC, agent card)
-was run against every host this record knows on 2026-09-07 and missed on all of them; the Internet Archive
-holds no capture of an `/api`, `/developer`, `/docs` or `/.well-known` URL on the domain at any point in its
-history. The probe log is in [`well-known/`](well-known/advancedfarmtechnologies-well-known.yml).
+**Areas:** Company · Agriculture · Agricultural Robotics · Robotics · Automation · Computer Vision · Harvesting
 
-- https://equityzen.com/company/advancedfarmtechnologies
+## Advanced Farm Technologies on APIs.io
+
+Everything profiled for Advanced Farm Technologies is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/advancedfarmtechnologies/](https://apis.io/providers/advancedfarmtechnologies/)** — or go straight to one of the APIs or properties below.
+
+## API Evangelist rating
+
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
+
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Advanced Farm Technologies: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/advancedfarmtechnologies/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
